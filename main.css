@@ -1,0 +1,74 @@
+/* Butun orqa fonni qora qilish */
+html, body {
+    height: 100%; /* Saytning to'liq balandligini egallash */
+    margin: 0; /* Marginni olib tashlash */
+    padding: 0; /* Paddingni olib tashlash */
+    background-color: #000; /* Orqa fonni qora qilish */
+    color: #fff; /* Matn rangini oq qilish */
+    font-family: Arial, sans-serif; /* Zamonaviy shrift */
+}
+
+input, select {
+    border: 1px solid #555;
+    background-color: #333; /* Input va select uchun fonni qora qilish */
+    color: white; /* Matnni oq qilish */
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #00aaff; /* Fokusda bo'lganda chiroyli ko'k rang */
+}
+
+#search {
+    margin-right: 10px; /* Input va select orasida bo'shliq */
+}
+
+#category-select, #sort-select {
+    margin-left: 10px;
+}
+
+#products {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+}
+
+/* Mahsulot kartochkalari uchun uslublar */
+.product {
+    text-align: center;
+    border: 2px solid #444;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 120px;
+    margin: 0 auto;
+}
+
+.product img {
+    width: 90px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 5px;
+}
+
+.product h3 {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.product p {
+    font-size: 12px;
+    color: #aaa;
+}

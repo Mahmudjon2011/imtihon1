@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+        <input type="text" id="search" placeholder="Mahsulotni qidiring..." style="padding: 10px; font-size: 16px; width: 100%; max-width: 300px;">
+        <div>
+            <select id="category-select" style="padding: 10px; font-size: 16px;">
+                <option value="all">Barchasi</option>
+                <option value="women's clothing">Qizlar kiyimi</option>
+                <option value="men's clothing">O'g'il bolalar kiyimi</option>
+                <option value="electronics">Texnikalar</option>
+            </select>
+        </div>
+        <div>
+            <select id="sort-select" style="padding: 10px; font-size: 16px;">
+                <option value="default">Saralash</option>
+                <option value="price-asc">Narx bo'yicha o'sish</option>
+                <option value="price-desc">Narx bo'yicha kamayish</option>
+                <option value="name-asc">Nom bo'yicha A-Z</option>
+                <option value="name-desc">Nom bo'yicha Z-A</option>
+            </select>
+        </div>
+    </div>
+    
+    <div id="products"></div>
+    
+    
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
